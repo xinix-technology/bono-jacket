@@ -1,0 +1,30 @@
+{
+    "name": "xinix-technology/bono-jacket",
+    "description": "Bono Jacket",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Xinix Technology",
+            "email": "hello@xinix.co.id"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/xinix-technology/jacket"
+        }
+    ],
+    "require-dev": {
+        "xinix-technology/jacket": "~0.0.4",
+        "xinix-technology/bono": "~1.0.0",
+        "xinix-technology/norm": "~1.0.0",
+        "xinix-technology/migrate": "~0.1.0",
+        "xinix-technology/bono-auth": "~1.0.0",
+        "xinix-technology/bono-blade": "~1.0.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "App": "src/"
+        }
+    }
+}

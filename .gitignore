@@ -1,0 +1,8 @@
+/vendor
+/composer.phar
+/*.sublime-*
+/node_modules
+/www/vendor
+/autoload.json
+cache
+srv/data

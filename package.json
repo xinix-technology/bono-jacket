@@ -1,0 +1,19 @@
+{
+  "name": "Bono-Arch",
+  "license": "proprietary",
+  "private": true,
+  "repository": {
+    "type": "git"
+  },
+  "description": "Backend",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-minify-css": "^1.2.0",
+    "gulp-minify-html": "^1.0.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.5.4",
+    "gulp-uglify": "^1.2.0",
+    "gulp-watch": "^4.3.4"
+  }
+}
