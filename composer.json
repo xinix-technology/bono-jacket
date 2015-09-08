@@ -12,6 +12,14 @@
         {
             "type": "vcs",
             "url": "https://github.com/xinix-technology/jacket"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/xinix-technology/bono-auth"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/xinix-technology/bono-blade"
         }
     ],
     "require-dev": {
