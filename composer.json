@@ -8,27 +8,13 @@
             "email": "hello@xinix.co.id"
         }
     ],
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/xinix-technology/jacket"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/xinix-technology/bono-auth"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/xinix-technology/bono-blade"
-        }
-    ],
-    "require-dev": {
-        "xinix-technology/jacket": "~0.0.4",
+    "require": {
         "xinix-technology/bono": "~1.0.0",
         "xinix-technology/norm": "~1.0.0",
         "xinix-technology/migrate": "~0.1.0",
         "xinix-technology/bono-auth": "~1.0.0",
-        "xinix-technology/bono-blade": "~1.0.0"
+        "xinix-technology/bono-blade": "~1.0.0",
+        "xinix-technology/jacket": "~0.0.6"
     },
     "autoload": {
         "psr-0": {
