@@ -30,15 +30,15 @@ return array(
     'bono.providers' => array(
         'Norm\\Provider\\NormProvider' => array(
             'datasources' => array(
-                // 'filedb' => array(
-                //     'driver' => 'ROH\\FDB\\Connection',
-                //     'dataDir' => '../srv/data',
-                // ),
-                // to use mongo
-                'mongo' => array(
-                    'driver' => 'Norm\\Connection\\MongoConnection',
-                    'database' => 'bono',
+                'filedb' => array(
+                    'driver' => 'ROH\\FDB\\Connection',
+                    'dataDir' => '../srv/data',
                 ),
+                // to use mongo
+                // 'mongo' => array(
+                //     'driver' => 'Norm\\Connection\\MongoConnection',
+                //     'database' => 'bono',
+                // ),
             ),
             'collections' => array(
                 'default' => array(
@@ -77,9 +77,9 @@ return array(
             ),
         ),
         // uncomment below to enable auth
-        // 'ROH\\BonoAuth\\Middleware\\AuthMiddleware' => array(
-        //     'driver' => 'ROH\\BonoAuth\\Driver\\NormAuth',
-        // ),
+        'Xinix\\BonoAuth\\Middleware\\AuthMiddleware' => array(
+            'driver' => 'Xinix\\BonoAuth\\Driver\\NormAuth',
+        ),
         'Bono\\Middleware\\NotificationMiddleware' => null,
         'Bono\\Middleware\\SessionMiddleware' => null,
         'Bono\\Middleware\\ContentNegotiatorMiddleware' => array(
