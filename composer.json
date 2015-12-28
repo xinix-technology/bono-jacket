@@ -14,8 +14,7 @@
         "xinix-technology/migrate": "~0.1.0",
         "xinix-technology/bono-auth": "~1.0.0",
         "xinix-technology/bono-blade": "~1.0.0",
-        "xinix-technology/jacket": "~0.0.6",
-        "reekoheek/norm-fdb": "dev-master"
+        "xinix-technology/jacket": "~0.0.6"
     },
     "autoload": {
         "psr-0": {

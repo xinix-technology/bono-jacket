@@ -77,9 +77,9 @@ return array(
             ),
         ),
         // uncomment below to enable auth
-        'Xinix\\BonoAuth\\Middleware\\AuthMiddleware' => array(
-            'driver' => 'Xinix\\BonoAuth\\Driver\\NormAuth',
-        ),
+        // 'Xinix\\BonoAuth\\Middleware\\AuthMiddleware' => array(
+        //     'driver' => 'Xinix\\BonoAuth\\Driver\\NormAuth',
+        // ),
         'Bono\\Middleware\\NotificationMiddleware' => null,
         'Bono\\Middleware\\SessionMiddleware' => null,
         'Bono\\Middleware\\ContentNegotiatorMiddleware' => array(

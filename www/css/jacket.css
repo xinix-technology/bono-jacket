@@ -1,0 +1,51 @@
+body, 
+html {
+	height: 100%;
+}
+main.content {
+    height: 100%;
+    background: 0 0;
+}
+main.content.has-contextual,
+main.content.has-actions {
+    padding-bottom: 44px;
+}
+.actions {
+	position: fixed;
+    left: 256px;
+    right: 256px;
+	top: 12px;
+}
+.actions a {
+    display: block; 
+}
+.actions a .xn {
+	float: left;
+}
+.contentcenter .middle .xn-docs {
+    font-size: 8em;
+    line-height: 1em;
+    margin: 0 0 8px;
+    color: #ccc;
+}
+.read .row {
+    margin: 0 -10px;
+}
+.read .row .row {
+    padding: 10px;
+    margin: 0;
+}
+.read .row .row .row {
+    padding: 0;
+}
+.hidden {
+    display: none!important;
+}
+.hidden, 
+.invisible, 
+ul.menu .collapsible ul {
+    visibility: hidden;
+}
+.disable {
+    color: #ccc!important;
+}

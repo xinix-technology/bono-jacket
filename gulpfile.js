@@ -34,7 +34,8 @@ var js = [
         './www/vendor/tshirt-popup/tshirt-popup.css',
         './www/vendor/jacket-awesome/jacket-awesome.css',
         './www/vendor/sketch/sketch/namecard/namecard.css',
-        './www/vendor/jacket/css/jacket.css'
+        './www/vendor/jacket/css/jacket.css',
+        './www/css/jacket.css'
     ],
     font = [
         './www/vendor/lato/font/*/*',
