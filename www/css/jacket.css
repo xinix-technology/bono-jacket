@@ -2,6 +2,9 @@ body,
 html {
 	height: 100%;
 }
+body {
+	background: #fff;
+}
 main.content {
     height: 100%;
     background: 0 0;
@@ -38,6 +41,15 @@ main.content.has-actions {
 .read .row .row .row {
     padding: 0;
 }
+.read .tooltip-text .tooltip {
+	right: 0;
+    width: 90%;
+    margin: 0 auto;
+    left: 0;
+    background: #CF4741;
+    color: #fff;
+    font-weight: 400;
+}
 .hidden {
     display: none!important;
 }
@@ -48,4 +60,71 @@ ul.menu .collapsible ul {
 }
 .disable {
     color: #ccc!important;
+}
+
+.alert div {
+    display: table;
+    width: 100%;
+}
+.alert .icon {
+    padding: 4px 24px;
+    width: 50px;
+    font-size: 24px;
+}
+.alert .close, 
+.alert .icon, 
+.alert p {
+    display: table-cell;
+    vertical-align: middle;
+    margin: 0;
+    pointer-events: none;
+}
+.alert p {
+    padding: 8px 8px 8px 15px;
+    text-align: left;
+    line-height: 1.24em;
+}
+.alert p span {
+	display: block;
+    margin-bottom: 3px;
+}
+.alert .close {
+    color: #fff!important;
+    width: 110px;
+    padding: 0;
+    white-space: nowrap;
+    background: 0 0!important;
+    border: none;
+    pointer-events: auto
+}
+.table.hover tr.hover td,
+.table.hover tr:hover td,
+.table tr.selected td, 
+table tr.selected td {
+	background: #EAF2F7;
+}
+#contextual .pagination {
+    margin-top: 8px;
+}
+.sidebar .nav li a.active {
+	color: #08c;
+}
+
+@media only screen and (min-width: 640px) {
+	.alert {
+	    position: fixed;
+	    width: 640px;
+	    margin: 0 auto;
+	    top: 0;
+	    -webkit-border-radius: 0 0 4px 4px;
+	    -moz-border-radius: 0 0 4px 4px;
+	    -ms-border-radius: 0 0 4px 4px;
+	    -o-border-radius: 0 0 4px 4px;
+	    border-radius: 0 0 4px 4px;
+	    -webkit-box-shadow: 0 0 64px #333;
+	    -moz-box-shadow: 0 0 64px #333;
+	    -ms-box-shadow: 0 0 64px #333;
+	    -o-box-shadow: 0 0 64px #333;
+	    box-shadow: 0 0 64px #333;
+	}
 }

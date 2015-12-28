@@ -1,6 +1,6 @@
 {
   "name": "Bono Jacket",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "authors": [
     "Xinix Technology <hello@xinix.co.id>"
   ],
@@ -20,7 +20,7 @@
     "highcharts": "~4.1.x",
     "html5shiv": "~3.7.x",
     "jacket-awesome": "~2.0.x",
-    "naked-css": "~1.1.5",
+    "naked-css": "~1.1.6",
     "normalize-css": "~3.0.x",
     "owl-carousel": "~1.3.x",
     "respond": "~1.4.x",
