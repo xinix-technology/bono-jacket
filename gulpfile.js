@@ -16,7 +16,8 @@ var js = [
         './www/vendor/jacket/js/tshirt/MenuHighlighter.js',
         './www/vendor/naked-css/js/tshirt.min.js',
         './www/vendor/tshirt-popup/tshirt-popup.js',
-        './www/vendor/jacket/js/tshirt.js'
+        './www/vendor/jacket/js/tshirt.js',
+        './www/js/jacket.js'
     ],
     jsie = [
         './www/vendor/html5shiv/dist/html5shiv.min.js',
