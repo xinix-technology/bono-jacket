@@ -6,3 +6,4 @@
 /autoload.json
 cache
 srv/data
+.DS_Store
