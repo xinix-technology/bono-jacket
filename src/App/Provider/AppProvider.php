@@ -8,6 +8,6 @@ class AppProvider extends \Bono\Provider\Provider
     {
         $app = $this->app;
 
-        // do something here
+        
     }
 }

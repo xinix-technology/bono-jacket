@@ -52,6 +52,6 @@ $(function() {
         $("html").removeClass ("fix");
     }
 
-
+    $('.popup').popup();
 
 });
