@@ -70,21 +70,6 @@
 					@section('actions')
 						<nav class="actions">
 							@section('back')
-								<ul class="flat left">
-									<li><a href="{{ f('controller.url') }}" class="disable"><i class="xn xn-left-open"></i>{{ l('Back') }}</a></li>
-									<li><a href="{{ f('controller.url', '/null/create') }}"><i class="xn xn-plus"></i>{{ l('New') }}</a></li>
-									<li><a href="{{ f('controller.url') }}" class="disable"><i class="xn xn-pencil"></i> {{ l('Edit') }}</a></li>
-									<li class="search">
-										<nav id="search">
-											<div class="search-area">
-												<span class="icn xn xn-search"></span>
-												<form action="#" class="input-search">
-													<input type="text" placeholder="Search Here...">
-												</form>
-											</div>
-										</nav>
-									</li>
-								</ul>
 							@show
 							<div class="clear"></div>
 						</nav>

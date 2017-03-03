@@ -60,6 +60,10 @@ return array(
         ),
         'Bono\\Provider\\LanguageProvider' => null,
         'App\\Provider\\AppProvider',
+        'DapurXinix\\Provider\\DapurXinixProvider'=>array(
+                'Upload_Directory' => dirname(__DIR__).'/www/data',// set directory for upload on application 
+                'bucket' => 'data'
+            ),
     ),
     'bono.middlewares' => array(
         'Bono\\Middleware\\StaticPageMiddleware' => null,

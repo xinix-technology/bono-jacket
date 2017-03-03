@@ -14,6 +14,7 @@ return array(
         'gender' => String::create('gender')->filter('trim'),
         'mobile_phone' => String::create('mobile_phone')->filter('trim'),
         'address' => String::create('address')->filter('trim'),
-        'role' => array
+        'role'      => ArrayReference::create('role_id')
+                    ->to('Role', null, 'name')
     ),
 );
