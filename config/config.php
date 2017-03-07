@@ -77,7 +77,10 @@ return array(
                 '/detail' => null,
                 '/user' => null,
                 '/form' => null,
-                '/role' => null,
+                '/previleges' => null,
+                '/role' => '\\App\Controller\\RoleController',
+                '/testing1' => null,
+                '/testing' => '\\App\\Controller\\TestingController',
             ),
         ),
         // uncomment below to enable auth

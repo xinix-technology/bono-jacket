@@ -1,0 +1,37 @@
+h1, h2, h3, h4, h5, h6, p {
+	font-weight: 300;
+}
+h1.regular, h2.regular, h3.regular, h4.regular, h5.regular, h6.regular, p.regular {
+	font-weight: 400;
+}
+
+h1 {
+	font-size: 2.15em;
+}
+h2 {
+	font-size: 1.85em;
+}
+h2.large {
+	font-size: 48px;
+}
+h2.xlarge {
+	font-size: 64px;
+}
+h3 {
+	font-size: 1.55em;
+}
+h4 {
+	font-size: 1.4em;
+}
+h5 {
+	font-size: 1.3em;
+}
+h6 {
+	font-size: 1.15em;
+}
+p {
+	font-size: 1em;
+}
+a {
+	color: #006A9F;
+}

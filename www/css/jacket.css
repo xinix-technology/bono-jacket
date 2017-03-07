@@ -962,3 +962,12 @@ paper-detail row label {
     bottom: initial;
 
 }
+
+
+.nav-menu .pull-right .user {
+    -webkit-transform-style: initial;
+    -moz-transform-style: initial;
+    -ms-transform-style: initial;
+    -o-transform-style: initial;
+     transform-style: initial; 
+}

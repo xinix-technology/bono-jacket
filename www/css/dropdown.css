@@ -1,0 +1,37 @@
+.overflow {
+	background: rgba(0, 0, 0, 0.35);
+	position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+}
+.context-menu {
+	z-index: 2;
+	padding: 8px 0;
+}
+.context-menu.higher>li {
+	padding: 0 10px;
+    max-height: 400px;
+    overflow-x: auto;
+}
+.context-menu.higher>li.last-child a,
+.context-menu.higher>li:last-child a {
+    border-bottom: 1px solid;
+}
+.context-menu a {
+    color: #000;
+}
+.context-menu li.first-child:before, 
+.context-menu li:first-child:before {
+	left: 50%;
+	margin-left: -8px;
+}
+.context-menu.right li.first-child:before, 
+.context-menu.right li:first-child:before {
+	left: initial;
+	margin-left: initial;
+	right: 16%;
+	margin-right: -8px;
+}

@@ -1,0 +1,80 @@
+.comment {
+    padding-left: 36px;
+}
+.comment-body {
+    overflow: hidden;
+    margin-left: 90px;
+    margin-right: 90px;
+    border-bottom: 1px solid #ccc;
+}
+.comment-body .button {
+    display: inline-block;
+    margin: 0;
+}
+.comments, 
+.comment { 
+    position: relative; 
+}
+.comments:before, 
+.comment:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 18px;
+}
+.comment:before {
+    width: 16px;
+    height: 16px;
+    border-radius: 100px;
+    margin: 12px 0 0 -8px;
+    background: #ccc;
+    z-index: 2;
+}
+.comment:after {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 20px;
+    left: 18px;
+    bottom: -20px;
+    border-left: 1px solid #ccc;
+}
+.comment:hover {
+    cursor: pointer;
+}
+.comment:last-child::after {
+    border: 0;
+}
+.comment:last-child .comment-body {
+    border-bottom: 0;
+}
+.comments {
+    position: relative
+}
+.comment-body {
+    margin: 0;
+    padding: 10px 0;
+}
+.comment-body h6,
+.comment-body p {
+    margin: 0;
+}
+.comment-body h6 {
+    color: #000;
+}
+.comment-body p.date {
+    font-size: 0.85em;
+}
+
+.comment.red:before {
+    background: #CF4741;
+}
+
+.comment.green:before {
+    background: #718F47;
+}
+
+.comment.yellow:before {
+    background: #E1BF32;
+}
