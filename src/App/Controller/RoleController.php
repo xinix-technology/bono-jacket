@@ -56,7 +56,7 @@ class RoleController extends AppController
     {
         try {
             $entry = $this->collection->findOne($id);
-            $previleges = $this->generatePrevilege($id);
+            
         } catch (Exception $e) {
             // noop
         }
@@ -104,12 +104,12 @@ class RoleController extends AppController
         }
 
         $this->data['entry'] = $entry;
-        $this->data['previlege'] = $previleges;
+        $this->data['previlege'] =  $this->generatePrevilege($id);
     }
 
     public function createPrevilege($idRole, $model){
 
-        $roleprevileges = \Norm::factory('RolePrevileges')->find($idRole);
+        $roleprevileges = \Norm::factory('RolePrevileges')->find(array('role'=>$idRole));
         
         foreach ($roleprevileges as $key => $value) {
             $value->remove();            
@@ -133,9 +133,6 @@ class RoleController extends AppController
 
         if($id){
             $previlegerole = \Norm::factory('RolePrevileges')->find(array('role' => $id));
-            echo '<pre>';
-            
-
             $datarole = array();
             foreach ($previlegerole as $key => $value) {
                 $datarole[$value['rule']] = true;

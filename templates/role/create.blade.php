@@ -53,7 +53,9 @@
 
 
     <form method="post" id="createform" class="read">
+        @section('form-title')
         <h1>{{ l('Create New {0}', Inflector::humanize(f('controller')->getClass())) }}</h1>
+        @show
         <div class="row">
 
             <div class="span-12 medium-12">

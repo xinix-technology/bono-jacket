@@ -25,8 +25,8 @@ input[type=text],
 input[type=time], 
 input[type=url], 
 input[type=week], 
-select, 
-select option, 
+select:not([multiple]), 
+select:not([multiple]) option, 
 textarea {
     border-color: #c6d5e7;
     font-weight: 400;
@@ -933,7 +933,7 @@ paper-detail row label {
 
 @media only screen and (min-width: 1023px) {
     main.content>.wrapper {
-        padding: 16px 32px;
+        padding: 16px 32px 64px;
     }
 }
 
