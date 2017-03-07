@@ -1,0 +1,118 @@
+.button.solid, 
+button.solid, 
+input[type=reset].solid, 
+input[type=submit].solid {
+    border: 1px solid transparent;
+    padding: 3px 24px;
+    font-weight: 400;
+    vertical-align: middle;
+    text-transform: uppercase;
+    margin: 0;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    border-radius: 8px;
+}
+
+.nav-menu {
+	background: #FAFAFA;
+    border-color: #eee;
+}
+.nav-menu .pull-left h1 {
+	display: inline-block;
+    float: none;
+    vertical-align: middle;
+    margin: 0 20px 0 0;
+}
+.nav-menu .add-new {
+    background: #F23E39;
+}
+.nav-menu .add-new:hover {
+    opacity: 0.8;
+}
+.nav-menu .add-new i {
+	font-size: 0.9em;
+    line-height: 1.64em;
+    vertical-align: middle;
+    margin-right: 3px;
+}
+.nav-menu .pull-right .user {
+    -webkit-transform-style: initial;
+    -moz-transform-style: initial;
+    -ms-transform-style: initial;
+    -o-transform-style: initial;
+     transform-style: initial; 
+}
+.nav-menu .pull-right .user a {
+	font-weight: 300;
+}
+.nav-menu .pull-right .user .photo {
+	width: 28px;
+	height: 28px;
+}
+[class*=" fa-"], [class^=fa-] {
+	width: 1.1em;
+    margin-right: .1em;
+    text-align: center;
+}
+.nav-menu .fa {
+	font-size: 24px;
+}
+.nav-menu .topbar>li {
+	padding-right: 60px;
+}
+.nav-menu .topbar .sub>a {
+    color: #000;
+}
+.nav-menu .notification>a i {
+	font-size: 24px;
+    vertical-align: middle;
+    line-height: 20px;
+    margin: 0;
+}
+.nav-menu .badge.error {
+    min-width: 16px;
+    height: 16px;
+    line-height: 16px;
+    background: #F13730;
+    border: 0;
+    font-size: 10px;
+    float: none;
+    vertical-align: middle;
+    margin: -20px 0 0 -10px;
+}
+.nav-menu .user a i {
+	margin: 0;
+    font-size: 16px;
+}
+.nav-tab {
+	position: absolute;
+	left: 0;
+    right: 0;
+    top: 0;
+    bottom: initial;
+    z-index: -1;
+}
+.nav-tab .center-tab {
+	margin: 0 auto;
+}
+.nav-tab .center-tab li {
+	margin: 0 20px 0 0;
+}
+.nav-tab .center-tab li:last-child {
+	margin: 0;
+}
+.nav-tab .center-tab a {
+    line-height: 46px;
+    padding: 0 10px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #000;
+    letter-spacing: 0.2pt;
+}
+.nav-tab .center-tab a.active {
+	color: #006A9F;
+	border-bottom: 2px solid #006A9F;
+	font-weight: 600;
+}

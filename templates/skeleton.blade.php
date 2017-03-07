@@ -70,21 +70,6 @@
 					@section('actions')
 						<nav class="actions">
 							@section('back')
-								<ul class="flat left">
-									<li><a href="{{ f('controller.url') }}" class="disable"><i class="xn xn-left-open"></i>{{ l('Back') }}</a></li>
-									<li><a href="{{ f('controller.url', '/null/create') }}"><i class="xn xn-plus"></i>{{ l('New') }}</a></li>
-									<li><a href="{{ f('controller.url') }}" class="disable"><i class="xn xn-pencil"></i> {{ l('Edit') }}</a></li>
-									<li class="search">
-										<nav id="search">
-											<div class="search-area">
-												<span class="icn xn xn-search"></span>
-												<form action="#" class="input-search">
-													<input type="text" placeholder="Search Here...">
-												</form>
-											</div>
-										</nav>
-									</li>
-								</ul>
 							@show
 							<div class="clear"></div>
 						</nav>
@@ -97,11 +82,62 @@
 										<i class="xn xn-bell"></i>
 										<span class="badge solid round error">2</span>
 									</a>
-									<ul class="context-menu">
-										<li><a href="#">Inbox</a></li>
-										<li><a href="#">Trash</a></li>
-										<li><a href="#">Deleted</a></li>
-									</ul>
+									<ul class="context-menu higher right">
+                                    <li>
+                                        <section class="comments">
+                                            <article class="comment yellow">
+                                                <div class="comment-body">
+                                                    <p class="date">20 Januari 2016 2:53 PM</p>
+                                                    <h6 class="regular">Tidak ada pengumuman</h6>
+                                                    <p>Tidak ada pengumuman untuk hari ini</p>
+                                                </div>
+                                            </article>
+
+                                            <article class="comment green">
+                                                <div class="comment-body">
+                                                    <p class="date">18 Januari 2016 2:53 PM</p>
+                                                    <h6 class="regular">Sakit</h6>
+                                                    <p>Izin sakit kepala</p>
+                                                    <a href="#" class="button solid success">
+                                                        Disetujui
+                                                    </a>
+                                                </div>
+                                            </article>
+
+                                            <article class="comment green">
+                                                <div class="comment-body">
+                                                    <p class="date">20 Januari 2016 2:53 PM</p>
+                                                    <h6 class="regular">Tidak ada Pengumuman</h6>
+                                                    <p>Tidak ada Pengumuman untuk hari ini</p>
+                                                    <a href="#" class="button success">
+                                                        <i class="xn xn-check"></i>
+                                                        Setuju
+                                                    </a>
+                                                    <a href="#" class="button error">
+                                                        <i class="xn xn-cancel"></i>
+                                                        Tolak
+                                                    </a>
+                                                </div>
+                                            </article>
+
+                                            <article class="comment red">
+                                                <div class="comment-body">
+                                                    <p class="date">3 Januari 2016 2:53 PM</p>
+                                                    <h6 class="regular">Anda Alpa 1</h6>
+                                                    <p>Anda tercatat alpa 1 hari ini</p>
+                                                </div>
+                                            </article>
+
+                                            <article class="comment red">
+                                                <div class="comment-body">
+                                                    <p class="date">2 Januari 2016 2:53 PM</p>
+                                                    <h6 class="regular">Anda Sakit</h6>
+                                                    <p>Anda tercatat sakit hari ini</p>
+                                                </div>
+                                            </article>
+                                        </section>
+                                    </li>
+                                </ul>
 								</li>
 								<li class="sub user">
 									<a href="#">
@@ -109,7 +145,7 @@
 										<span>Admin</span>
 										<i class="xn xn-down-open-mini"></i>
 									</a>
-									<ul class="context-menu right">
+									<ul class="context-menu higher right">
 										<li><a href="#">Design</a></li>
 										<li><a href="#">Web Design</a></li>
 										<li><a href="#">Web Development</a></li>

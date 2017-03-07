@@ -17,7 +17,9 @@ var js = [
         './www/vendor/naked-css/js/tshirt.min.js',
         './www/vendor/tshirt-popup/tshirt-popup.js',
         './www/vendor/jacket/js/tshirt.js',
-        './www/js/jacket.js'
+        './www/js/jacket.js',
+        './www/js/dropdown.js',
+        './www/js/scroll.js'
     ],
     jsie = [
         './www/vendor/html5shiv/dist/html5shiv.min.js',
@@ -28,15 +30,16 @@ var js = [
         './www/vendor/animate-css/animate.css',
         './www/vendor/lato/css/lato.css',
         './www/vendor/jacket-awesome/dist/css/jacket-awesome.css',
-        './www/vendor/naked-css/css/naked.min.css',
+        './www/vendor/naked-css/css/naked.css',
         './www/vendor/owl-carousel/owl-carousel/owl.carousel.css',
         './www/vendor/owl-carousel/owl-carousel/owl.theme.css',
         './www/vendor/owl-carousel/owl-carousel/owl.transitions.css',
         './www/vendor/tshirt-popup/tshirt-popup.css',
         './www/vendor/jacket-awesome/jacket-awesome.css',
         './www/vendor/sketch/sketch/namecard/namecard.css',
-        './www/vendor/jacket/css/jacket.css',
-        './www/css/jacket.css'
+        './www/css/jacket.css',
+        './www/css/dropdown.css',
+        './www/css/timeline.css',
     ],
     font = [
         './www/vendor/lato/font/*/*',

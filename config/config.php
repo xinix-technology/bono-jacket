@@ -22,7 +22,7 @@ return array(
     ),
     'bono.timezone' => 'Asia/Jakarta',
     'bono.prettifyURL' => true,
-    'bono.salt' => 'please change this',
+    'bono.salt' => '123456789',
     'bono.theme' => array(
         'class' => 'Xinix\\Theme\\Jacket',
         'overwrite' => true,
@@ -49,7 +49,7 @@ return array(
                     ),
 
                     // Limit the entries that shown, then paginate them
-                    'limit' => 20,
+                    'limit' => 10,
                 ),
 
                 // Resolver to find where the schemas config stored see in /config/collections folder
@@ -60,11 +60,15 @@ return array(
         ),
         'Bono\\Provider\\LanguageProvider' => null,
         'App\\Provider\\AppProvider',
+        'DapurXinix\\Provider\\DapurXinixProvider'=>array(
+                'Upload_Directory' => dirname(__DIR__).'/www/data',// set directory for upload on application 
+                'bucket' => 'data'
+            ),
     ),
     'bono.middlewares' => array(
         'Bono\\Middleware\\StaticPageMiddleware' => null,
         'Bono\\Middleware\\ControllerMiddleware' => array(
-            'default' => 'Norm\\Controller\\NormController',
+            'default' => 'App\\Controller\\AppController',
             'mapping' => array(
                 '/icons' => null,
                 '/table' => null,
@@ -73,7 +77,10 @@ return array(
                 '/detail' => null,
                 '/user' => null,
                 '/form' => null,
-                '/role' => null,
+                '/previleges' => null,
+                '/role' => '\\App\Controller\\RoleController',
+                '/testing1' => null,
+                '/testing' => '\\App\\Controller\\TestingController',
             ),
         ),
         // uncomment below to enable auth

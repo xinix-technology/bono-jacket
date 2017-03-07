@@ -6,4 +6,6 @@
 /autoload.json
 cache
 srv/data
+.phpintel/
 .DS_Store
+

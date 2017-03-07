@@ -936,3 +936,38 @@ paper-detail row label {
         padding: 16px 32px;
     }
 }
+
+/*delete pop up */
+
+#popupContent .content {
+    background: #fff;
+    overflow: hidden;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    padding: 16px 16px 8px;
+}
+
+#popupContent .actions {
+    padding: 0;
+    display: block;
+    border-top: 1px solid #ccc;
+    margin: 0 -16px -8px;
+    position: relative;
+    left: initial;
+    right: initial;
+    top: initial;
+    bottom: initial;
+
+}
+
+
+.nav-menu .pull-right .user {
+    -webkit-transform-style: initial;
+    -moz-transform-style: initial;
+    -ms-transform-style: initial;
+    -o-transform-style: initial;
+     transform-style: initial; 
+}

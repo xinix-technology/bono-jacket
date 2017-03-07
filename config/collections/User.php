@@ -2,6 +2,7 @@
 
 use Norm\Schema\String;
 use Norm\Schema\Password;
+use Norm\Schema\ReferenceArray;
 
 return array(
     'schema' => array(
@@ -14,5 +15,7 @@ return array(
         'gender' => String::create('gender')->filter('trim'),
         'mobile_phone' => String::create('mobile_phone')->filter('trim'),
         'address' => String::create('address')->filter('trim'),
+        'role'      => ReferenceArray::create('role_id')
+                    ->to('Role', null, 'name')
     ),
 );
