@@ -7,3 +7,5 @@
 cache
 srv/data
 .phpintel/
+.DS_Store
+
