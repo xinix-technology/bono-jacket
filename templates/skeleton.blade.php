@@ -146,12 +146,9 @@
 										<i class="xn xn-down-open-mini"></i>
 									</a>
 									<ul class="context-menu higher right">
-										<li><a href="#">Design</a></li>
-										<li><a href="#">Web Design</a></li>
-										<li><a href="#">Web Development</a></li>
-										<li class="divider"></li>
-										<li><a href="#">Illustrations</a></li>
-										<li><a href="#">Designer</a></li>
+										<li><a href="<?php echo URL::site('logout')?>">LogOut</a></li>
+										
+										
 									</ul>
 								</li>
 								<li class="devider"></li>
@@ -165,18 +162,38 @@
 			@section('sidebar')
 				<aside class="sidebar">
 					<ul class="nav with-icon">
-						<li><a href="<?php echo URL::base() ?>"><i class="icn-left xn xn-home"></i> Dashboard <span class="icn-right badge round solid error">10</span></a></li>
+						<li><a href="<?php echo URL::site() ?>"><i class="icn-left xn xn-home"></i> Dashboard <span class="icn-right badge round solid error">10</span></a></li>
 						<li class="devider"></li>
-						<li><a href="<?php echo URL::base('table') ?>"><i class="icn-left xn xn-book-open"></i> Table View <i class="icn-right xn xn-right-open-mini"></i></a></li>
-						<li><a href="<?php echo URL::base('list') ?>"><i class="icn-left xn xn-menu"></i> List View <i class="icn-right xn xn-right-open-mini"></i></a></li>
-						<li><a href="<?php echo URL::base('grid') ?>"><i class="icn-left xn xn-layout"></i> Grid View <i class="icn-right xn xn-right-open-mini"></i></a></li>
-						<li><a href="<?php echo URL::base('detail') ?>"><i class="icn-left xn xn-newspaper"></i> Detail View <i class="icn-right xn xn-right-open-mini"></i></a></li>
-						<li><a href="<?php echo URL::base('form') ?>"><i class="icn-left xn xn-keyboard"></i> Form View <i class="icn-right xn xn-right-open-mini"></i></a></li>
+						@if(f('auth.allowed', '/table'))
+						<li><a href="<?php echo URL::site('table') ?>"><i class="icn-left xn xn-book-open"></i> Table View <i class="icn-right xn xn-right-open-mini"></i></a></li>
+						@endif
+						@if(f('auth.allowed', '/list'))
+						<li><a href="<?php echo URL::site('list') ?>"><i class="icn-left xn xn-menu"></i> List View <i class="icn-right xn xn-right-open-mini"></i></a></li>
+						@endif
+						@if(f('auth.allowed', '/grid'))
+						<li><a href="<?php echo URL::site('grid') ?>"><i class="icn-left xn xn-layout"></i> Grid View <i class="icn-right xn xn-right-open-mini"></i></a></li>
+						@endif
+						@if(f('auth.allowed', '/detail'))
+						<li><a href="<?php echo URL::site('detail') ?>"><i class="icn-left xn xn-newspaper"></i> Detail View <i class="icn-right xn xn-right-open-mini"></i></a></li>
+						@endif
+						@if(f('auth.allowed', '/form'))
+						<li><a href="<?php echo URL::site('form') ?>"><i class="icn-left xn xn-keyboard"></i> Form View <i class="icn-right xn xn-right-open-mini"></i></a></li>
+						@endif
+
 						<li class="devider"></li>
-						<li><a href="<?php echo URL::base('user') ?>"><i class="icn-left xn xn-users"></i> User View <i class="icn-right xn xn-right-open-mini"></i></a></li>
-						<li><a href="<?php echo URL::base('role') ?>"><i class="icn-left xn xn-vcard"></i> Role View <i class="icn-right xn xn-right-open-mini"></i></a></li>
+						@if(f('auth.allowed', '/user'))
+						<li><a href="<?php echo URL::site('user') ?>"><i class="icn-left xn xn-users"></i> User View <i class="icn-right xn xn-right-open-mini"></i></a></li>
+						@endif
+						@if(f('auth.allowed', '/role'))
+						<li><a href="<?php echo URL::site('role') ?>"><i class="icn-left xn xn-vcard"></i> Role View <i class="icn-right xn xn-right-open-mini"></i></a></li>
+						@endif
+						@if(f('auth.allowed', '/previleges'))
+						<li><a href="<?php echo URL::site('previleges') ?>"><i class="icn-left xn xn-vcard"></i> Previleges View <i class="icn-right xn xn-right-open-mini"></i></a></li>
+						@endif
 						<li class="devider"></li>
-						<li><a href="<?php echo URL::base('icons') ?>"><i class="icn-left xn xn-heart"></i> New Icons <i class="icn-right xn xn-right-open-mini"></i></a></li>
+						@if(f('auth.allowed', '/icons'))
+						<li><a href="<?php echo URL::site('icons') ?>"><i class="icn-left xn xn-heart"></i> New Icons <i class="icn-right xn xn-right-open-mini"></i></a></li>
+						@endif
 					</ul>
 				</aside>
 			@show

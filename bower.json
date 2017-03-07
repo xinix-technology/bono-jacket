@@ -28,5 +28,8 @@
     "sketch": "xinix-technology/sketch#~0.0.x",
     "tshirt-popup": "~1.0.x",
     "tshirt-scroll": "~0.0.x"
+  },
+  "dependencies": {
+    "jqwidgets": "^4.6.0"
   }
 }
