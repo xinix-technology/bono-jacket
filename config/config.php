@@ -21,7 +21,7 @@ return array(
         'subtitle' => 'One great application'
     ),
     'bono.timezone' => 'Asia/Jakarta',
-    'bono.prettifyURL' => true,
+    'bono.prettifyURL' => false,
     'bono.salt' => '123456789',
     'bono.theme' => array(
         'class' => 'Xinix\\Theme\\Jacket',
@@ -78,9 +78,7 @@ return array(
                 '/user' => null,
                 '/form' => null,
                 '/previleges' => null,
-                '/role' => '\\App\Controller\\RoleController',
-                '/testing1' => null,
-                '/testing' => '\\App\\Controller\\TestingController',
+                '/role' => '\\App\Controller\\RoleController'
             ),
         ),
         // uncomment below to enable auth
