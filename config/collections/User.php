@@ -2,7 +2,7 @@
 
 use Norm\Schema\String;
 use Norm\Schema\Password;
-use Norm\Schema\ReferenceArray;
+use Norm\Schema\RoleArray;
 
 return array(
     'schema' => array(
