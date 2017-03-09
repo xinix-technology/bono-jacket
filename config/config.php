@@ -60,6 +60,8 @@ return array(
         ),
         'Bono\\Provider\\LanguageProvider' => null,
         'App\\Provider\\AppProvider',
+        //uncomment if using authentication
+        // 'App\\Provider\\LoginProvider',
         'DapurXinix\\Provider\\DapurXinixProvider'=>array(
                 'Upload_Directory' => dirname(__DIR__).'/www/data',// set directory for upload on application 
                 'bucket' => 'data'
