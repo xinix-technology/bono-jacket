@@ -26,7 +26,7 @@ foreach (f('controller')->schema() as $key => $field) {
                     <div class="search-area">
                         <span class="icn xn xn-search"></span>
                         <form action="#" class="input-search">
-                            <input type="text" placeholder="Search Here...">
+                            <input type="text" placeholder="Search Here..." id="searchbar">
                         </form>
                     </div>
                 </nav>

@@ -20,11 +20,14 @@ class RoleController extends AppController
         if ($this->request->isPost()) {
             
             try {
-                if(!empty($_POST['rule'])){
-                    $rule = $_POST['rule'];
-                    unset($_POST['rule']);
+                $post = $this->request->getBody();
+
+                if(!empty($post['rule'])){
+                    $rule = $post['rule'];
+                    unset($post['rule']);
                 }
-                $result = $entry->set($this->request->getBody())->save();
+
+                $result = $entry->set($post)->save();
                 
                 $this->createPrevilege($entry->getId(), $rule);
 
@@ -128,7 +131,7 @@ class RoleController extends AppController
 
     public function generatePrevilege($id = null){
 
-        $previlege =  \Norm::factory('Previleges')->find()->sort(array('order' => 1));
+        $previlege =  \Norm::factory('Previleges')->find()->sort(array('ordering' => 1));
         $prearray = array();
 
         if($id){
