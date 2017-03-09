@@ -4,8 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "1a809abd4c395e15ee1a79e244008afb",
-    "content-hash": "9b8b6173b50771f0c045d8953af9868b",
+    "content-hash": "3a535e5ff5026118fbd7214da9160af6",
     "packages": [
         {
             "name": "filp/whoops",
@@ -63,7 +62,7 @@
                 "whoops",
                 "zf2"
             ],
-            "time": "2015-06-29 05:42:04"
+            "time": "2015-06-29T05:42:04+00:00"
         },
         {
             "name": "guzzle/guzzle",
@@ -155,7 +154,8 @@
                 "rest",
                 "web service"
             ],
-            "time": "2014-01-28 22:29:15"
+            "abandoned": "guzzlehttp/guzzle",
+            "time": "2014-01-28T22:29:15+00:00"
         },
         {
             "name": "illuminate/container",
@@ -201,7 +201,7 @@
                     "role": "Creator of Laravel"
                 }
             ],
-            "time": "2014-05-22 21:07:57"
+            "time": "2014-05-22T21:07:57+00:00"
         },
         {
             "name": "illuminate/events",
@@ -250,7 +250,7 @@
                     "role": "Creator of Laravel"
                 }
             ],
-            "time": "2014-03-22 20:12:48"
+            "time": "2014-03-22T20:12:48+00:00"
         },
         {
             "name": "illuminate/filesystem",
@@ -298,7 +298,7 @@
                     "role": "Creator of Laravel"
                 }
             ],
-            "time": "2014-03-22 20:12:48"
+            "time": "2014-03-22T20:12:48+00:00"
         },
         {
             "name": "illuminate/support",
@@ -350,7 +350,7 @@
                     "role": "Creator of Laravel"
                 }
             ],
-            "time": "2014-05-30 16:22:08"
+            "time": "2014-05-30T16:22:08+00:00"
         },
         {
             "name": "illuminate/view",
@@ -401,23 +401,72 @@
                     "role": "Creator of Laravel"
                 }
             ],
-            "time": "2014-04-18 15:17:37"
+            "time": "2014-04-18T15:17:37+00:00"
         },
         {
-            "name": "ramsey/uuid",
-            "version": "2.8.4",
+            "name": "paragonie/random_compat",
+            "version": "v2.0.9",
             "source": {
                 "type": "git",
-                "url": "https://github.com/ramsey/uuid.git",
-                "reference": "805d8e1894c52e5b1582e75ca8803a8d85650df9"
+                "url": "https://github.com/paragonie/random_compat.git",
+                "reference": "6968531206671f94377b01dc7888d5d1b858a01b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ramsey/uuid/zipball/805d8e1894c52e5b1582e75ca8803a8d85650df9",
-                "reference": "805d8e1894c52e5b1582e75ca8803a8d85650df9",
+                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/6968531206671f94377b01dc7888d5d1b858a01b",
+                "reference": "6968531206671f94377b01dc7888d5d1b858a01b",
                 "shasum": ""
             },
             "require": {
+                "php": ">=5.2.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.*|5.*"
+            },
+            "suggest": {
+                "ext-libsodium": "Provides a modern crypto API that can be used to generate random bytes."
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "lib/random.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Paragon Initiative Enterprises",
+                    "email": "security@paragonie.com",
+                    "homepage": "https://paragonie.com"
+                }
+            ],
+            "description": "PHP 5.x polyfill for random_bytes() and random_int() from PHP 7",
+            "keywords": [
+                "csprng",
+                "pseudorandom",
+                "random"
+            ],
+            "time": "2017-03-03T20:43:42+00:00"
+        },
+        {
+            "name": "ramsey/uuid",
+            "version": "2.9.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ramsey/uuid.git",
+                "reference": "b2ef4dd9584268d73f92f752a62bc24cd534dc9a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ramsey/uuid/zipball/b2ef4dd9584268d73f92f752a62bc24cd534dc9a",
+                "reference": "b2ef4dd9584268d73f92f752a62bc24cd534dc9a",
+                "shasum": ""
+            },
+            "require": {
+                "paragonie/random_compat": "^1.0|^2.0",
                 "php": ">=5.3.3"
             },
             "replace": {
@@ -467,7 +516,7 @@
                 "identifier",
                 "uuid"
             ],
-            "time": "2015-12-17 16:54:24"
+            "time": "2016-03-22T18:20:19+00:00"
         },
         {
             "name": "reekoheek/jsonkit",
@@ -509,7 +558,7 @@
                     "role": "Developer"
                 }
             ],
-            "time": "2014-06-02 13:46:37"
+            "time": "2014-06-02T13:46:37+00:00"
         },
         {
             "name": "reekoheek/norm-fdb",
@@ -517,13 +566,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/reekoheek/norm-fdb.git",
-                "reference": "871dd6a0e28427ad6322994c64a552647467a1c3"
+                "reference": "418a7396e7d0a73e23e3d5603b451749b008c88e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reekoheek/norm-fdb/zipball/871dd6a0e28427ad6322994c64a552647467a1c3",
-                "reference": "871dd6a0e28427ad6322994c64a552647467a1c3",
+                "url": "https://api.github.com/repos/reekoheek/norm-fdb/zipball/418a7396e7d0a73e23e3d5603b451749b008c88e",
+                "reference": "418a7396e7d0a73e23e3d5603b451749b008c88e",
                 "shasum": ""
+            },
+            "require": {
+                "ramsey/uuid": "~2.8"
             },
             "type": "library",
             "autoload": {
@@ -542,7 +594,7 @@
                 }
             ],
             "description": "Norm File Database Driver",
-            "time": "2015-08-31 06:13:24"
+            "time": "2016-03-07 16:32:03"
         },
         {
             "name": "reekoheek/util",
@@ -577,7 +629,7 @@
                 }
             ],
             "description": "PHP util library",
-            "time": "2014-01-02 04:08:44"
+            "time": "2014-01-02T04:08:44+00:00"
         },
         {
             "name": "slim/slim",
@@ -621,20 +673,20 @@
                 "rest",
                 "router"
             ],
-            "time": "2013-10-31 02:05:09"
+            "time": "2013-10-31T02:05:09+00:00"
         },
         {
             "name": "symfony/event-dispatcher",
-            "version": "v3.0.1",
+            "version": "v3.2.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/event-dispatcher.git",
-                "reference": "d36355e026905fa5229e1ed7b4e9eda2e67adfcf"
+                "reference": "b7a1b9e0a0f623ce43b4c8d775eb138f190c9d8d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/d36355e026905fa5229e1ed7b4e9eda2e67adfcf",
-                "reference": "d36355e026905fa5229e1ed7b4e9eda2e67adfcf",
+                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/b7a1b9e0a0f623ce43b4c8d775eb138f190c9d8d",
+                "reference": "b7a1b9e0a0f623ce43b4c8d775eb138f190c9d8d",
                 "shasum": ""
             },
             "require": {
@@ -654,7 +706,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.0-dev"
+                    "dev-master": "3.2-dev"
                 }
             },
             "autoload": {
@@ -681,7 +733,7 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "https://symfony.com",
-            "time": "2015-10-30 23:35:59"
+            "time": "2017-02-21T09:12:04+00:00"
         },
         {
             "name": "symfony/finder",
@@ -728,7 +780,7 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "http://symfony.com",
-            "time": "2014-09-27 08:35:25"
+            "time": "2014-09-27T08:35:25+00:00"
         },
         {
             "name": "xinix-technology/blade-theme",
@@ -764,20 +816,20 @@
                 }
             ],
             "description": "Basic Blade Theme Resolver Class",
-            "time": "2015-09-30 08:33:35"
+            "time": "2015-09-30T08:33:35+00:00"
         },
         {
             "name": "xinix-technology/bono",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/xinix-technology/bono.git",
-                "reference": "b83361eb85467b062021752714c6b50ef69ee00f"
+                "reference": "9bb080bcf8b3bc8f9dc8692b95995b49ed61a605"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/xinix-technology/bono/zipball/b83361eb85467b062021752714c6b50ef69ee00f",
-                "reference": "b83361eb85467b062021752714c6b50ef69ee00f",
+                "url": "https://api.github.com/repos/xinix-technology/bono/zipball/9bb080bcf8b3bc8f9dc8692b95995b49ed61a605",
+                "reference": "9bb080bcf8b3bc8f9dc8692b95995b49ed61a605",
                 "shasum": ""
             },
             "require": {
@@ -824,7 +876,7 @@
                     "role": "Developer"
                 }
             ],
-            "time": "2015-07-31 12:22:41"
+            "time": "2016-03-07T16:01:29+00:00"
         },
         {
             "name": "xinix-technology/bono-auth",
@@ -861,7 +913,7 @@
                 }
             ],
             "description": "Bono Auth",
-            "time": "2015-09-09 11:33:54"
+            "time": "2015-09-09T11:33:54+00:00"
         },
         {
             "name": "xinix-technology/bono-blade",
@@ -897,7 +949,49 @@
                 }
             ],
             "description": "Laravel Blade template engine for Bono PHP Framework",
-            "time": "2015-08-31 08:31:28"
+            "time": "2015-08-31T08:31:28+00:00"
+        },
+        {
+            "name": "xinix-technology/dapur-xinix",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/xinix-technology/dapur-xinix.git",
+                "reference": "ee5b7c082337536f255212b20e0b2703006b386a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/xinix-technology/dapur-xinix/zipball/ee5b7c082337536f255212b20e0b2703006b386a",
+                "reference": "ee5b7c082337536f255212b20e0b2703006b386a",
+                "shasum": ""
+            },
+            "require": {
+                "reekoheek/norm-fdb": "dev-master",
+                "xinix-technology/bono": "~1.0.0",
+                "xinix-technology/migrate": "~0.1.0",
+                "xinix-technology/norm": "~1.0.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "DapurXinix": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Januar Siregar",
+                    "email": "januar.siregar@gmail.com"
+                }
+            ],
+            "description": "Bono Component",
+            "support": {
+                "source": "https://github.com/xinix-technology/dapur-xinix/tree/master",
+                "issues": "https://github.com/xinix-technology/dapur-xinix/issues"
+            },
+            "time": "2017-03-03 00:02:51"
         },
         {
             "name": "xinix-technology/jacket",
@@ -933,7 +1027,7 @@
                 }
             ],
             "description": "When Bono gets Naked, but use several T-shirt, all his got is Jacket.",
-            "time": "2015-11-18 12:16:51"
+            "time": "2015-11-18T12:16:51+00:00"
         },
         {
             "name": "xinix-technology/migrate",
@@ -969,20 +1063,20 @@
                 }
             ],
             "description": "Migration tool for bono",
-            "time": "2014-06-20 12:12:49"
+            "time": "2014-06-20T12:12:49+00:00"
         },
         {
             "name": "xinix-technology/norm",
-            "version": "1.0.0",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/xinix-technology/norm.git",
-                "reference": "06ac9f3fcb7289ee2fddfeb63c86bd4a227ba6a1"
+                "reference": "b3acd6838ea654c8a554f2f9900379a512adba9f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/xinix-technology/norm/zipball/06ac9f3fcb7289ee2fddfeb63c86bd4a227ba6a1",
-                "reference": "06ac9f3fcb7289ee2fddfeb63c86bd4a227ba6a1",
+                "url": "https://api.github.com/repos/xinix-technology/norm/zipball/b3acd6838ea654c8a554f2f9900379a512adba9f",
+                "reference": "b3acd6838ea654c8a554f2f9900379a512adba9f",
                 "shasum": ""
             },
             "require": {
@@ -1023,13 +1117,14 @@
                     "role": "Developer"
                 }
             ],
-            "time": "2015-08-11 06:05:55"
+            "time": "2016-01-13T11:03:31+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "xinix-technology/dapur-xinix": 20,
         "reekoheek/norm-fdb": 20
     },
     "prefer-stable": false,

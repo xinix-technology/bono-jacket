@@ -11,15 +11,12 @@
      "autoload": {
         "psr-0": {
             "App": "src/"
-            
-            
-
         }
     },
-    "repositories": [ { "type": "vcs", "url": "ssh://tig@tig.dev.xinix.co.id:22033/xinix-technology/dapur-xinix.git" } ],
+    "repositories": [ { "type": "vcs", "url": "git@github.com:xinix-technology/dapur-xinix.git" } ],
     "require": {
-        "xinix-technology/bono": "~1.0.0",
-        "xinix-technology/norm": "~1.0.0",
+        "xinix-technology/bono": "1.0.*",
+        "xinix-technology/norm": "1.0.*",
         "xinix-technology/migrate": "~0.1.0",
         "xinix-technology/bono-auth": "~1.0.0",
         "xinix-technology/bono-blade": "~1.0.0",

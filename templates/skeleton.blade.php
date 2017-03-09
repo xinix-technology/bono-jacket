@@ -23,6 +23,7 @@
 		@show
 
 		<script type="text/javascript" src="<?php echo Theme::base('js/app.min.js') ?>"></script>
+		<script type="text/javascript" src="<?php echo Theme::base('js/custom.js') ?>"></script>
 
 		@section('customjs')
 			<!-- Custom JS -->

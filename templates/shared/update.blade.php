@@ -15,7 +15,7 @@
         <li><a href="{{ f('controller.url', '/null/create') }}" class="disable"><i class="xn xn-plus"></i>{{ l('New') }}</a></li>
         @endif
         @if(f('auth.allowed', f('controller.uri', '/id/update')))
-        <li><a href="{{ f('controller.url'),'/:id/update') }}" class="disable"><i class="xn xn-pencil"></i> {{ l('Edit') }}</a></li>
+        <li><a href="{{ f('controller.url','/:id/update') }}" class="disable"><i class="xn xn-pencil"></i> {{ l('Edit') }}</a></li>
         @endif
     </ul>
 @stop

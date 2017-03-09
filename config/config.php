@@ -21,7 +21,7 @@ return array(
         'subtitle' => 'One great application'
     ),
     'bono.timezone' => 'Asia/Jakarta',
-    'bono.prettifyURL' => true,
+    'bono.prettifyURL' => false,
     'bono.salt' => '123456789',
     'bono.theme' => array(
         'class' => 'Xinix\\Theme\\Jacket',
@@ -30,15 +30,15 @@ return array(
     'bono.providers' => array(
         'Norm\\Provider\\NormProvider' => array(
             'datasources' => array(
-                'filedb' => array(
-                    'driver' => 'ROH\\FDB\\Connection',
-                    'dataDir' => '../srv/data',
-                ),
-                // to use mongo
-                // 'mongo' => array(
-                //     'driver' => 'Norm\\Connection\\MongoConnection',
-                //     'database' => 'bono',
+                // 'filedb' => array(
+                //     'driver' => 'ROH\\FDB\\Connection',
+                //     'dataDir' => '../srv/data',
                 // ),
+                // to use mongo
+                'mongo' => array(
+                    'driver' => 'Norm\\Connection\\MongoConnection',
+                    'database' => 'bono',
+                ),
             ),
             'collections' => array(
                 'default' => array(
@@ -60,6 +60,8 @@ return array(
         ),
         'Bono\\Provider\\LanguageProvider' => null,
         'App\\Provider\\AppProvider',
+        //uncomment if using authentication
+        // 'App\\Provider\\LoginProvider',
         'DapurXinix\\Provider\\DapurXinixProvider'=>array(
                 'Upload_Directory' => dirname(__DIR__).'/www/data',// set directory for upload on application 
                 'bucket' => 'data'
@@ -78,9 +80,7 @@ return array(
                 '/user' => null,
                 '/form' => null,
                 '/previleges' => null,
-                '/role' => '\\App\Controller\\RoleController',
-                '/testing1' => null,
-                '/testing' => '\\App\\Controller\\TestingController',
+                '/role' => '\\App\Controller\\RoleController'
             ),
         ),
         // uncomment below to enable auth
